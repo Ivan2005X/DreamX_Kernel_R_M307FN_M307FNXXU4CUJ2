@@ -102,7 +102,7 @@ static unsigned long sel_last_ino = SEL_INO_NEXT - 1;
 #define SEL_INO_MASK			0x00ffffff
 
 #define TMPBUFLEN	12
-ifdef CONFIG_SECURITY_SELINUX_FAKE_ENFORCE
+#ifdef CONFIG_SECURITY_SELINUX_FAKE_ENFORCE
 static int user_selinux_enforcing = 0;
 #endif
 static ssize_t sel_read_enforce(struct file *filp, char __user *buf,
